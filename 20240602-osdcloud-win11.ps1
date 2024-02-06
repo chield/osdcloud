@@ -13,11 +13,6 @@ Install-Module OSD -Force
 Write-Host  -ForegroundColor Cyan "Importing the sweet OSD PowerShell Module"
 Import-Module OSD -Force
 
-#TODO: Spend the time to write a function to do this and put it here
-Write-Host  -ForegroundColor Cyan "Ejecting ISO"
-Write-Warning "That didn't work because I haven't coded it yet!"
-#Start-Sleep -Seconds 5
-
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with Interstellar Parameters"
 Start-OSDCloud "-OSName 'Windows 11 23H2 x64' -OSLanguage en-us -OSEdition Pro -OSActivation Retail -ZTI" -Wallpaper "C:\Interstellar\INTERSTELLAR-Background.jpg"
