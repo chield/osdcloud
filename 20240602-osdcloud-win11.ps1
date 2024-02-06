@@ -2,9 +2,9 @@ Write-Host  -ForegroundColor Cyan "Starting Interstellar's Custom OSDCloud ..."
 Start-Sleep -Seconds 5
 
 #Change Display Resolution
-Write-Host  -ForegroundColor Cyan "Installing DisplaySettings PowerShell Module"
-Install-Module -Name DisplaySettings -Force
-Set-DisplayResolution -Width 1280 -Height 1024
+#Write-Host  -ForegroundColor Cyan "Installing DisplaySettings PowerShell Module"
+#Install-Module -Name DisplaySettings -Force
+#Set-DisplayResolution -Width 1280 -Height 1024
 
 #Make sure I have the latest OSD Content
 Write-Host  -ForegroundColor Cyan "Updating the awesome OSD PowerShell Module"
