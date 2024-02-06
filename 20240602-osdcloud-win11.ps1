@@ -15,7 +15,7 @@ Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with Interstellar Parameters"
-Start-OSDCloud -OSLanguage en-us -OSBuild 23H2 -OSEdition Pro -OSActivation Retail -ZTI -Wallpaper C:\Interstellar\INTERSTELLAR-Background.jpg
+Start-OSDCloud -OSLanguage en-us -OSBuild 23H2 -OSEdition Pro -OSActivation Retail -ZTI
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
