@@ -2,7 +2,9 @@ Write-Host  -ForegroundColor Cyan "Starting Interstellar's Custom OSDCloud ..."
 Start-Sleep -Seconds 5
 
 #Change Display Resolution
-Set-DisRes 1600
+Write-Host  -ForegroundColor Cyan "Installing DisplaySettings PowerShell Module"
+Install-Module -Name DisplaySettings -Force
+Set-DisplayResolution -Width 1280 -Height 1024
 
 #Make sure I have the latest OSD Content
 Write-Host  -ForegroundColor Cyan "Updating the awesome OSD PowerShell Module"
@@ -18,7 +20,7 @@ Write-Warning "That didn't work because I haven't coded it yet!"
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Cyan "Start OSDCloud with Interstellar Parameters"
-Start-OSDCloud "-OSName 'Windows 11 23H2 x64' -OSLanguage en-us -OSEdition Pro -OSActivation Retail -ZTI -restart" -Wallpaper "C:\Interstellar\INTERSTELLAR-Background.jpg"
+Start-OSDCloud "-OSName 'Windows 11 23H2 x64' -OSLanguage en-us -OSEdition Pro -OSActivation Retail -ZTI" -Wallpaper "C:\Interstellar\INTERSTELLAR-Background.jpg"
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
